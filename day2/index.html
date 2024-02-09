@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrapggf Example</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    #navbarText i {
+      color: white;
+    }
+
+    .navbar-brand {
+      color: white;
+    }
+
+    body {
+      background-color: #eee;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="p-0 navbar navbar-expand-lg bg-secondary">
+    <div class="p-0 container-fluid">
+      <a class="navbar-brand p-2 btn btn-primary" href="#">
+        <i class="bi bi-house"></i> logo</a>
+      <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <i class="bi bi-globe-americas p-2"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-person-fill p-2"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-envelope bi-light p-2"></i>
+
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+
+              <div class="position-relative">
+                <i class="bi bi-bell bi-light m-2"></i>
+                <span class="start-100 translate-middle badge rounded-pill bg-success">
+                  3+
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <span class="navbar-text me-5">
+          <img src="./img_avatar1.png" class="rounded-circle" width="32" alt="">
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <main class="col-12 mt-3 d-block d-md-flex">
+
+    <div class="left-side col-md-3 p-2">
+
+      <div class="card col-12">
+        <span class="m-auto p-3">
+          My Profile
+        </span>
+        <img src="./1.jpg" class="m-auto rounded-circle" width="100" height="100" alt="...">
+        <hr>
+        <div class="card-body">
+
+          <p class="">
+            <span class="d-block m-2">
+              <i class="bi bi-pencil-fill m-2"></i>
+              JavaScript Dev.
+
+            </span>
+            <span class="d-block m-2">
+              <i class="bi bi-house m-2"></i>
+              Almahala Elkobra
+
+            </span>
+            <span class="m-2">
+              <i class="bi bi-calendar-day m-2"></i>
+              Desamber 1,1999
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <br>
+
+
+      <div class="accordion accordion-flush col-12 " id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <i class="bi bi-calendar-day p-2"></i>
+              My Groubs
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+              <code>.accordion-flush</code> class. This is the first item's accordion body.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <i class="bi bi-calendar-day p-2"></i>
+              My Events
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+              <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
+              filled with some actual content.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              <i class="bi bi-people p-2"></i>
+              My Photos
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+              <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+              happening here in terms of content, but just filling up the space to make it look, at least at first
+              glance, a bit more representative of how this would look in a real-world application.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="col-12 alert alert-secondary alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+    </div>
+
+
+    <div class="center-side col-12 col-md-9 col-lg-7 mt-2">
+
+      <div class="g-3 card p-3">
+        <div class="col-auto">
+          <label class="col-form-label">Social meadia tempalte by codeward</label>
+        </div>
+        <div class="col-auto">
+          <input type="text" class="form-control">
+        </div>
+        <div class="col-auto pt-3">
+          <button class="btn btn-secondary"> <i class="bi bi-pen"> </i>post</button>
+        </div>
+      </div>
+      <div class="g-3 card p-3 mt-3">
+        <div class="mb-4 d-flex justify-content-between">
+          <div>
+            <img class="rounded-circle" src="./1.jpg" width="50" height="50" alt="">
+            <span class="ms-2 ">Mido Shony</span>
+          </div>
+
+          <small class="m-2">10 mins ago</small>
+        </div>
+        <hr>
+        <div class="col-auto ">
+
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur nihil beatae voluptatum ex, maiores
+          eligendi consequuntur, porro dolore ipsam adipisci perferendis est, sint dolores a consectetur ad iste aut?
+          Vitae.
+
+        </div>
+        <div class="col-auto d-flex pt-3 row">
+          <img class="col-6 " src="./1.jpg" alt="">
+          <img class="col-6 " src="./1.jpg" alt="">
+        </div>
+        <div class="pt-3">
+          <button class="btn btn-secondary"><i class="bi bi-hand-thumbs-down"></i> Like</button>
+          <button class="btn btn-primary"><i class="bi bi-chat"></i> comment</button>
+
+        </div>
+      </div>
+
+
+      <div class="g-3 card p-3 mt-3">
+        <div class="mb-4 d-flex justify-content-between">
+          <div>
+            <img class="rounded-circle" src="./1.jpg" width="50" height="50" alt="">
+            <span class="ms-2 ">Mido Shony</span>
+          </div>
+
+          <small class="m-2">10 mins ago</small>
+        </div>
+        <hr>
+        <div class="col-auto ">
+
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur nihil beatae voluptatum ex, maiores
+          eligendi consequuntur, porro dolore ipsam adipisci perferendis est, sint dolores a consectetur ad iste aut?
+          Vitae.
+
+        </div>
+
+        <div class="pt-3">
+          <button class="btn btn-secondary"><i class="bi bi-hand-thumbs-down"></i> Like</button>
+          <button class="btn btn-primary"><i class="bi bi-chat"></i> comment</button>
+
+        </div>
+      </div>
+      <div class="g-3 card p-3 mt-3 ">
+        <div class="mb-4 d-flex justify-content-between">
+          <div>
+            <img class="rounded-circle" src="./1.jpg" width="50" height="50" alt="">
+            <span class="ms-2 ">Mido Shony</span>
+          </div>
+
+          <small class="m-2">10 mins ago</small>
+        </div>
+        <hr>
+        <div class="col-auto ">
+
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </div>
+        <div class="col-auto d-flex pt-3 row">
+          <img class="col-12 " src="./1.jpg" alt="">
+          <div class="mt-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum sequi inventore exercitationem corporis
+            debitis placeat laudantium quisquam, reprehenderit magnam! Architecto, beatae! Ipsum atque animi officiis
+            necessitatibus cum maiores inventore dolores?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, voluptatem tenetur, rem atque sit
+            officia itaque at vitae fuga velit animi quam numquam dignissimos eum accusamus dolore molestias nobis
+            voluptas?
+          </div>
+        </div>
+        <div class="pt-3">
+          <button class="btn btn-secondary"><i class="bi bi-hand-thumbs-down"></i> Like</button>
+          <button class="btn btn-primary"><i class="bi bi-chat"></i> comment</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="right-side col-2 p-2 d-none d-lg-block">
+
+      <div class="card">
+        <span class="m-auto p-3">
+          Upcoming Events </span>
+        <img src="./1.jpg" class="m-auto rounded" width="200" height="100" alt="...">
+
+        <div class="card-body m-auto">
+          <h5>Holyday</h5>
+
+          Friday 14:43
+
+        </div>
+        <button type="button" class="btn btn-secondary m-2">info</button>
+      </div>
+
+      <br>
+
+      <div class="card">
+        <span class="m-auto p-3">
+          Freind REquset
+        </span>
+        <img src="./1.jpg" class="m-auto" width="100" height="100" alt="...">
+
+        <div class="card-body m-auto ">
+          <h5>CodeWard 143</h5>
+
+        </div>
+        <div class="btuns d-flex">
+
+          <button type="button" class="btn col-5 btn-success m-2"><i class="bi bi-check-lg"></i></button>
+          <button type="button" class="btn col-5 btn-danger m-2"><i class="bi bi-x-lg"></i></button>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="card">
+        <span class="m-auto p-4">
+          ADS
+        </span>
+
+      </div>
+
+      <br>
+
+      <div class="card">
+        <span class="m-auto p-3">
+          <i class="bi bi-bug-fill" style="font-size: 50px;"></i>
+        </span>
+
+      </div>
+
+
+
+
+    </div>
+
+  </main>
+  <footer class="footer mt-4 p-3 text-bg-secondary"> Footer</footer>
+  <footer class="footer  p-3 text-bg-dark"> Powered by CodeWard143</footer>
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
